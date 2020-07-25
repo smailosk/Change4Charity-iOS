@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "937617539869",
+    "firebase_url": "https://change4charity-86aa3.firebaseio.com",
+    "project_id": "change4charity-86aa3",
+    "storage_bucket": "change4charity-86aa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937617539869:android:e9b30ac8f14501179257f4",
+        "android_client_info": {
+          "package_name": "de.miteinanderfueruganda.change4charity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937617539869-8nv2s4lsi0vv1acmrvgdlontehjr3d8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnaJj3Pajk__aeERM-9Lk7FXe8aASiBa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937617539869-8nv2s4lsi0vv1acmrvgdlontehjr3d8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
