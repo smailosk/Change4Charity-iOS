@@ -48,7 +48,7 @@ class DonationView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text(
-                        '${nubmerFormat.format(model.totalDonationAmount)} \$',
+                        '${nubmerFormat.format(model.totalDonationAmount)} \€',
                         style: TextStyle(fontSize: SizeConfig.setSp(20)),
                       ),
                       InkWell(
