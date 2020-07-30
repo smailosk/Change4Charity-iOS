@@ -30,7 +30,7 @@ class RepositoryService {
   }
 
   Future<bool> userExists() async {
-    await _storage.deleteAll();
+    //await _storage.deleteAll();
 
     var rawJson = await _storage.read(key: 'user');
     if (rawJson == null)
