@@ -38,10 +38,13 @@ class ProfileViewModel extends BaseModel {
   }
 
   removeHabit(String habitName) {
-    if (_user.habits.contains(habitName)) {
-      _user.habits.remove(habitName);
-    }
-    notifyListeners();
+    print(habitName);
+    _user.habits.forEach((habit) {
+      if (habit.name == habitName) {
+        _user.habits.remove(habit);
+        notifyListeners();
+      }
+    });
   }
 
   addHabit(Habit habitName) {

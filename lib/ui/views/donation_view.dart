@@ -64,7 +64,7 @@ class DonationView extends StatelessWidget {
                             width: SizeConfig.relativeWidth(40),
                             height: SizeConfig.relativeHeight(6),
                             decoration: new BoxDecoration(
-                                color: model.totalDonationAmount > 0
+                                color: model.totalDonationAmount > 5
                                     ? Colors.yellow.shade400
                                     : Colors.grey.shade400,
                                 borderRadius: BorderRadius.circular(23))),

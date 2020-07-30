@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:provider_architecture/provider_architecture.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'profile_view.dart';
+import 'package:share/share.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -37,29 +38,34 @@ class _HomeViewState extends State<HomeView> {
           return SafeArea(
             child: Scaffold(
               drawer: Drawer(
-                child: ListView(
-                  children: <Widget>[
-                    DrawerHeader(
-                      child: Center(
-                        child: CircleAvatar(
-                          backgroundImage:
-                              AssetImage("./assets/Images/logo.png"),
-                          backgroundColor: Colors.red,
-                          radius: 60,
+                child: Container(
+                  color: Colors.grey,
+                  child: ListView(
+                    children: <Widget>[
+                      DrawerHeader(
+                        child: Center(
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage("assets/logo.png"),
+                            backgroundColor: Colors.red,
+                            radius: 60,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                      ListTile(
+                        title: Text("Share"),
+                        trailing: Icon(Icons.share),
+                        onTap: () {
+                          Share.share(
+                              'Charity4Change http://www.miteinanderfueruganda.de/');
+                        },
+                      )
+                    ],
+                  ),
                 ),
               ),
-              resizeToAvoidBottomPadding: true,
+              resizeToAvoidBottomPadding: false,
               appBar: AppBar(
-                actions: <Widget>[
-                  IconButton(
-                    icon: Icon(Icons.language),
-                    onPressed: () {},
-                  ),
-                ],
+                actions: <Widget>[],
                 title: Text("Charity4Change"),
               ),
               extendBody: true,

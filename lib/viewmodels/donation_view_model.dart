@@ -24,7 +24,7 @@ class DonationViewModel extends BaseModel {
   }
 
   donate() async {
-    if (totalDonationAmount == 0) return;
+    if (totalDonationAmount < 5) return;
     String url = 'https://paypal.me/TogetherForUganda/$totalDonationAmount';
     Donation donation =
         Donation(amount: totalDonationAmount, dateTime: DateTime.now());

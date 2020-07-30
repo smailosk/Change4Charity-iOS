@@ -15,7 +15,7 @@ class ProfileView extends StatefulWidget {
 class _ProfileViewState extends State<ProfileView> {
   TextEditingController _habitController = TextEditingController();
   TextEditingController _nameController = TextEditingController(text: '');
-  TextEditingController _amountController = TextEditingController(text: '0.00');
+  TextEditingController _amountController = TextEditingController(text: '');
 
   @override
   Widget build(BuildContext context) {
