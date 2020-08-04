@@ -122,7 +122,7 @@ class DonationView extends StatelessWidget {
                                                 MainAxisAlignment.spaceBetween,
                                             children: <Widget>[
                                               Text(
-                                                  '${nubmerFormat.format(donation.amount)} \$'),
+                                                  '${nubmerFormat.format(donation.amount)} \€'),
                                               SizeConfig.verticalSpacer(1),
                                               Row(
                                                 children: <Widget>[
