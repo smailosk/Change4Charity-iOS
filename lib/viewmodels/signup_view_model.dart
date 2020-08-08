@@ -14,6 +14,7 @@ class SignUpViewModel extends BaseModel {
   File profilePicture;
 
   addHabit(String name, double amount) {
+    if (amount <= 0) return;
     var firstLetter = name[0];
     var camelCaseValue = firstLetter.toUpperCase() + name.substring(1);
     if (!_habits.contains(camelCaseValue)) {

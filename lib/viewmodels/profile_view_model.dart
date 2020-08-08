@@ -48,6 +48,7 @@ class ProfileViewModel extends BaseModel {
   }
 
   addHabit(Habit habitName) {
+    if (habitName.amount <= 0) return;
     var habit = _user.habits.where((habit) => habit.name == habitName.name);
     if (habit != null) {
       _user.habits.add(habitName);

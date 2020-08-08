@@ -7,6 +7,7 @@ import 'package:provider_architecture/provider_architecture.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'profile_view.dart';
 import 'package:share/share.dart';
+import 'package:flutter_email_sender/flutter_email_sender.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -57,6 +58,21 @@ class _HomeViewState extends State<HomeView> {
                         onTap: () {
                           Share.share(
                               'Charity4Change http://www.miteinanderfueruganda.de/');
+                        },
+                      ),
+                      ListTile(
+                        title: Text("FeedBack"),
+                        trailing: Icon(Icons.feedback),
+                        onTap: () async {
+                          final Email email = Email(
+                            body: '',
+                            subject: 'Mobile App - Feedback',
+                            recipients: ['info@miteinanderfueruganda.de'],
+        
+                            isHTML: false,
+                          );
+
+                          await FlutterEmailSender.send(email);
                         },
                       )
                     ],
