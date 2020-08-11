@@ -7,6 +7,10 @@ class HomeViewModel extends BaseModel {
   final RepositoryService _repositoryService = locator<RepositoryService>();
 
   showPopUp() {
-    _navigationService.navigateTo(AddDonationViewRoute);
+    var habits = _repositoryService.currentUser.habits;
+    print(habits);
+    if (habits.isNotEmpty || habits.length > 0) {
+      _navigationService.navigateTo(AddDonationViewRoute);
+    }
   }
 }

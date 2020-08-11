@@ -37,6 +37,7 @@ class SignUpViewModel extends BaseModel {
     notifyListeners();
   }
 
+  // Ajouter un User
   submit(String name) async {
     setBusy(true);
     // ignore: missing_required_param
@@ -45,7 +46,6 @@ class SignUpViewModel extends BaseModel {
         fullName: name,
         profileImagePath: profilePicture == null ? '' : profilePicture.path);
     await _repositoryService.saveUser(user);
-    await Future.delayed(Duration(seconds: 2));
     setBusy(false);
     _navigationService.popAllAndNavigateTo(HomeViewRoute);
   }

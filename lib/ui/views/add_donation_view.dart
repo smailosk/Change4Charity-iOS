@@ -100,15 +100,15 @@ class AddDonationView extends StatelessWidget {
                                   style: TextStyle(color: Colors.white),
                                 ),
                               ),
-                              height: SizeConfig.relativeHeight(5),
-                              width: SizeConfig.relativeWidth(50),
+                              height: SizeConfig.relativeHeight(3),
+                              width: SizeConfig.relativeWidth(40),
                               decoration: BoxDecoration(
                                 color: Colors.blueAccent.shade200,
-                                borderRadius: BorderRadius.circular(23),
+                                borderRadius: BorderRadius.circular(5),
                               ),
                             ),
                           ),
-                          SizeConfig.verticalSpacer(3),
+                          SizeConfig.verticalSpacer(2),
                           InkWell(
                             onTap: () {
                               model.cancel();
@@ -120,11 +120,11 @@ class AddDonationView extends StatelessWidget {
                                   style: TextStyle(color: Colors.white),
                                 ),
                               ),
-                              height: SizeConfig.relativeHeight(5),
-                              width: SizeConfig.relativeWidth(50),
+                              height: SizeConfig.relativeHeight(3),
+                              width: SizeConfig.relativeWidth(40),
                               decoration: BoxDecoration(
                                 color: Colors.red.shade400,
-                                borderRadius: BorderRadius.circular(23),
+                                borderRadius: BorderRadius.circular(5),
                               ),
                             ),
                           ),
