@@ -68,6 +68,7 @@ class _HomeViewState extends State<HomeView> {
                             body: '',
                             subject: 'Mobile App - Feedback',
                             recipients: ['info@miteinanderfueruganda.de'],
+        
                             isHTML: false,
                           );
 
